@@ -1,0 +1,11 @@
+# These files are fetched by a page, never read by a person. A churches.json
+# in a search result is noise, and it competes with the locality page that is
+# meant to answer the query.
+#
+# Note: a robots.txt is only obeyed at the root of an origin. While this is
+# served from eltosin11.github.io/vynehaus-data/ it is NOT at that root and no
+# crawler reads it; it takes effect when these records get a hostname of their
+# own. For it to bite before then, a robots.txt in a repository named
+# eltosin11.github.io would have to disallow /vynehaus-data/.
+User-agent: *
+Disallow: /
